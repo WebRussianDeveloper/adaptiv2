@@ -183,7 +183,7 @@
         border: 10px solid bold;
         border-color: black;
         color: #FFFFFF;
-        text-shadow: 4px rgba(0, 0, 0, 0.945);
+        text-shadow: 0 -10px 6px #2D2A2A;
 
     }
 
@@ -195,38 +195,43 @@
         color: white;
         text-decoration-color: rgba(0, 0, 0, 0.05);
         text-shadow: black 1px 1px 1px;
+        
     }
 
     /* круги */
-    .features-index {
-        display: flex;
-        width: 90%;
-        margin-left: 6%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .features-index {
-        background-color: rgba(0, 0, 0, .05);
-    }
-
-    .features-block-index {
-        text-align: center;
-    }
-
-    .features-block-index__title {
+    .features-block-index_title {
         font-weight: 700;
         font-size: 17px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        text-shadow: black 1px 1px 1px;
-
+        color: black;
+        text-shadow: rgba(7, 230, 18, 0.15) 1px 1px 1px;
+        letter-spacing: 3px;
+        line-height: 20px;
+       
     }
-
-    .features-photo-index {
-        width: 128px;
-        height: 128px;
+    .features-block-index_postion {
+        font-weight: 700;
+        font-size: 15px;
+        color: black;
+        line-height: 15px;
     }
+    
+    .card {
+        perspective: 1000px;
+        transform-style: preserve-3d;
+        text-align: center;
+      }
+      
+      .card-item {
+        height: 250px;
+        width: 200px;
+        background-color: #dff9fb;
+        transition: transform .2s ease;
+        text-align: center;
+        opacity: 0.8;
+        position: relative;
+        margin: 0 auto;
+        outline: 2px solid rgba(0, 0, 0, 0.55);
+      }
 
     /* Давайте работать вместе */
 
