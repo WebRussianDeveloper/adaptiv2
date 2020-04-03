@@ -261,7 +261,7 @@
     .button:hover {
         color: white;
         background: red;
-        box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+        box-shadow: 0 0 5px red, 0 0 20px red, 0 0 40px red;
         transition-delay: 0.5s;
     }
 
@@ -345,9 +345,9 @@
     }
 
     .features-photo-about {
-        width: 200px;
-        height: 200px;
-
+        width: 330px;
+        height: 330px;
+     
     }
 
     .subtittle-about {
