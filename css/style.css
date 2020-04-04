@@ -255,7 +255,7 @@
     }
     
     .card, .card_text {
-        border: 4px double black;
+        border: 6px double #851919;
         width: 200px;
         height: 200px;
         background: #ccc;
