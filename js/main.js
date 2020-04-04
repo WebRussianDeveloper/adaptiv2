@@ -45,32 +45,32 @@ function addElement(e) {
     this.appendChild(addDiv);
 }
 
-//круги//
+// //круги//
 
-let card = new Card('js-card');
-card.run();
+// let card = new Card('js-card');
+// card.run();
 
 
-function Card(classCard) {
-  this.cards = document.querySelectorAll('.' + classCard);
-  this.bindEventsCard = function() {
-    for (let i = 0, length = this.cards.length; i < length; i++) {
-      this.cards[i].addEventListener('mousemove', this.startRotate);
-      this.cards[i].addEventListener('mouseout', this.stopRotate);
-    }
-  }
-  this.startRotate = function(event) {
-    let cardItem = this.querySelector('.card-item'),
-        halfHeight = cardItem.offsetHeight / 2,
-        halfWidth = cardItem.offsetWidth / 2;
-    cardItem.style.transform = 'rotatex(' + -(event.offsetY - halfHeight) / 10 + 'deg) rotateY(' + (event.offsetX - halfWidth) / 10 + 'deg)';
-  }
-  this.stopRotate = function(event) {
-  let cardItem = this.querySelector('.card-item');
-  cardItem.style.transform = 'rotate(0)';
-}
-  this.run = () => {
-    this.bindEventsCard();
-  }
-}
+// function Card(classCard) {
+//   this.cards = document.querySelectorAll('.' + classCard);
+//   this.bindEventsCard = function() {
+//     for (let i = 0, length = this.cards.length; i < length; i++) {
+//       this.cards[i].addEventListener('mousemove', this.startRotate);
+//       this.cards[i].addEventListener('mouseout', this.stopRotate);
+//     }
+//   }
+//   this.startRotate = function(event) {
+//     let cardItem = this.querySelector('.card-item'),
+//         halfHeight = cardItem.offsetHeight / 2,
+//         halfWidth = cardItem.offsetWidth / 2;
+//     cardItem.style.transform = 'rotatex(' + -(event.offsetY - halfHeight) / 10 + 'deg) rotateY(' + (event.offsetX - halfWidth) / 10 + 'deg)';
+//   }
+//   this.stopRotate = function(event) {
+//   let cardItem = this.querySelector('.card-item');
+//   cardItem.style.transform = 'rotate(0)';
+// }
+//   this.run = () => {
+//     this.bindEventsCard();
+//   }
+// }
 

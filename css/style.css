@@ -195,43 +195,82 @@
         color: white;
         text-decoration-color: rgba(0, 0, 0, 0.05);
         text-shadow: black 1px 1px 1px;
-        
+
     }
 
     /* круги */
     .features-block-index_title {
         font-weight: 700;
-        font-size: 17px;
+        font-size: 20px;
         color: black;
         text-shadow: rgba(7, 230, 18, 0.15) 1px 1px 1px;
         letter-spacing: 3px;
-        line-height: 20px;
-       
+        line-height: 30px;
+        margin-top: 20px;
+        text-align: center;
     }
+
     .features-block-index_postion {
         font-weight: 700;
         font-size: 15px;
         color: black;
         line-height: 15px;
     }
+
+    .features-block-index_postion,
+    .features-block-index_img {
+        text-align: center;
+    }
+
+    .features-photo-index {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cards {
+        width: 200px;
+        height: 200px;
+        perspective: 1000px;
+        margin: 0 auto;
+    }
+    
+    .cards:hover .rotate {
+        transform: rotateY(180deg);
+    }
+    
+    .rotate {
+        transition: 0.5s;
+        transform-style: preserve-3d;
+    }
+    
+    .card_text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(180deg);
+    }
     
     .card {
-        perspective: 1000px;
-        transform-style: preserve-3d;
-        text-align: center;
-      }
-      
-      .card-item {
-        height: 250px;
+        vertical-align: middle;
+    }
+    
+    .card, .card_text {
+        border: 4px double black;
         width: 200px;
-        background-color: #dff9fb;
-        transition: transform .2s ease;
-        text-align: center;
-        opacity: 0.8;
-        position: relative;
-        margin: 0 auto;
-        outline: 2px solid rgba(0, 0, 0, 0.55);
-      }
+        height: 200px;
+        background: #ccc;
+        backface-visibility: hidden;
+    }
+    
+    
+    .card_text_in {
+        padding: 20px;
+    }
+
+    .cards_img{
+width: 100px;
+height: 100px;
+    }
 
     /* Давайте работать вместе */
 
@@ -329,25 +368,28 @@
 
 
     /* О нас */
-    .row{
-        margin-top: 50px; 
+    .row {
+        margin-top: 50px;
     }
+
     .features-block-about_title,
     .features-block-about_postion,
-    .features-block-about_img{
+    .features-block-about_img {
         text-align: center;
     }
-    .features-block-about_title{
+
+    .features-block-about_title {
         font-size: 20px;
     }
-    .features-block-about_postion{
+
+    .features-block-about_postion {
         font-weight: 500;
     }
 
     .features-photo-about {
         width: 330px;
         height: 330px;
-     
+
     }
 
     .subtittle-about {
@@ -355,7 +397,7 @@
         margin-left: 14%;
         margin-top: 30px;
         width: 75%;
-        background-color:rgba(0, 0, 0, 0.15);
+        background-color: rgba(0, 0, 0, 0.15);
     }
 
 
