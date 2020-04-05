@@ -189,7 +189,7 @@
 
 
     .subtittle {
-        margin-left: 30%;
+        text-align: center;
         letter-spacing: 3px;
         font-size: 30px;
         color: white;
@@ -281,9 +281,10 @@ height: 100px;
 
 
     /* кнопка */
+    .butt{
+        text-align: center;
+    }
     .button {
-        margin-left: 38%;
-        margin-top: 5%;
         position: relative;
         display: inline-block;
         padding: 15px 30px;
@@ -395,10 +396,13 @@ height: 100px;
 
     .subtittle-about {
         text-align: center;
-        margin-left: 14%;
         margin-top: 30px;
-        width: 75%;
         background-color: rgba(0, 0, 0, 0.15);
+        letter-spacing: 2px;
+        font-size: 20px;
+        color: white;
+        text-decoration-color: rgba(0, 0, 0, 0.05);
+        text-shadow: black 1px 1px 1px;
     }
 
 
@@ -519,14 +523,8 @@ height: 100px;
 
         .subtittle {
 
-            margin-left: 24%;
+
             font-size: 25px;
-        }
-
-        .button {
-            margin-left: 30%;
-            margin-top: 40px;
-
         }
 
 
@@ -544,7 +542,6 @@ height: 100px;
 
         .button {
             font-size: 19px;
-            margin-left: 25%;
         }
     }
 
@@ -565,13 +562,12 @@ height: 100px;
 
         .subtittle {
             font-size: 15px;
-            margin-left: 20%;
+
             margin-top: 40px;
         }
 
         .button {
             font-size: 15px;
-            margin-top: 40px;
         }
 
         .main_tittle {
@@ -591,7 +587,7 @@ height: 100px;
 
         .subtittle {
             font-size: 12px;
-            margin-left: 15%;
+
             margin-top: 40px;
         }
 
@@ -601,8 +597,6 @@ height: 100px;
 
         .button {
             font-size: 12px;
-            margin-left: 15%;
-            margin-top: 40px;
 
         }
     }
